@@ -5,7 +5,7 @@ get_number = int(input("Choose a number? "))
 #Multiply the number by five
 times_five = get_number*5
 
-#output the result
+#get the answer
 answer = "{} times five is equal to {}.".format(get_number, times_five)
 
 
