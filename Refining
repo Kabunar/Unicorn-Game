@@ -1,0 +1,18 @@
+instructions = ""
+while instructions.lower() != "xxx":    
+  #Ask the user if they have played before
+    #ask the user
+    instructions = input("Have you played this game before? ").lower()
+    
+    #if they say input program continues
+    if instructions == "yes" or instructions == "y":
+      print("program continues")
+    
+    
+    elif instructions == "n" or instructions == "no":
+      print("displaying instructions")
+    
+    
+    #if they say no input instructions
+    else:
+      print("please type in yes / no")
