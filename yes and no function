@@ -1,0 +1,23 @@
+#Fucntion always go first
+def yes_no(question):
+  valid = False
+  while not valid:
+    response = input("Have you played this game before? ").lower()
+
+#if they say input program continues
+    if response == "yes" or response == "y":
+      response = "yes"
+      return response
+    
+    elif response == "n" or response == "no":
+      response = "no"
+      return response
+    
+    #if they say no input instructions
+    else:
+      print("please type in yes / no")
+
+
+#Main routine
+instructions = yes_no("Have you played this game before? ")
+print("You chose {}".format(instructions))
