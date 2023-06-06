@@ -1,0 +1,9 @@
+Valid = False
+Error = "Enter a whole number between 1 and 10"
+#Code goes here
+while not Valid:
+  response = int(input("How much money do you want to gamble? "))
+  if 0 < response <=10:
+    print(f"You have asked to play with ${response} ")
+  else:
+    print(Error)
