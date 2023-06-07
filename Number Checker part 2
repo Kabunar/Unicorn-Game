@@ -1,0 +1,17 @@
+def num_check(question, low, high):
+    valid = False
+    while not valid:
+        try:
+            # Ask the question
+            response = int(input(question))
+            # Check if the amount is within the valid range
+            if low < response <= high:
+                return response
+            else:
+                print("Please enter a whole number between 1 and 10.")
+        except ValueError:
+            print("Please enter a whole number between 1 and 10.")
+
+# Main routine
+how_much = num_check("How much money would you like to play with? ", 0, 10)
+print(f"You will be spending ${how_much}")
