@@ -1,0 +1,21 @@
+import random
+#main routine
+starting_balance = 100
+balance = starting_balance
+#testing loop to generate 100 tokens
+for item in range(0, 100):
+  chosen_number = random.randint(1, 100)
+  #Adjust balance
+  if 1 <= chosen_number <= 5:
+    chosen = "Unicorn"
+    balance += 4
+  elif 6 <= chosen_number <= 36:
+    chosen = "Donkey"
+    balance -= 1
+  else:
+    chosen = "Horse / Zebra"
+    balance -= 0.5
+#code right here
+print()
+print(f"Starting Balance: ${starting_balance}")
+print(f"Final Balance: ${balance}")
