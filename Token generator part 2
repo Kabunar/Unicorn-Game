@@ -1,0 +1,19 @@
+import random
+#main routine
+tokens = ["Unicorn", "Horse", "Horse", "Horse","Zebra", "Zebra", "Zebra", "Donkey", "Donkey", "Donkey"]
+starting_balance = 100
+balance = starting_balance
+#testing loop to generate 100 tokens
+for item in range(0, 100):
+  chosen = random.choice(tokens)
+  #Adjust balance
+  if chosen == "Unicorn":
+    balance += 4
+  elif chosen == "donkey":
+    balance -= 1
+  else:
+    balance -= 0.5
+#code right here
+print()
+print(f"Starting Balance: ${starting_balance}")
+print(f"Final Balance: ${balance}")
