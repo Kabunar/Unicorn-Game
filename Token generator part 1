@@ -1,0 +1,17 @@
+import random
+#main routine
+tokens = ["Unicorn", "Horse", "Zebra", "Donkey"]
+balance = 100
+
+#testing loop to generate 20 tokens
+for item in range(0, 20):
+  chosen = random.choice(tokens)
+  #Adjust balance
+  if chosen == "Unicorn":
+    balance += 4
+  elif chosen == "donkey":
+    balance -= 1
+  else:
+    balance -= 0.5
+    #Output the result
+    print(f"Token: {chosen}, Balance: ${balance}")
